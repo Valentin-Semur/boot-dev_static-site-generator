@@ -1,7 +1,13 @@
 from textnode import TextNode
+from htmlnode import HTMLNode
 
 def main():
-    random_node = TextNode("whao this is text", "string")
-    print(random_node)
-    
+    test = HTMLNode(tag="a", value="fasefasf", props={
+    "href": "https://www.google.com", 
+    "target": "_blank",
+    })
+    print(test.props_to_html())
+    print(test)
+
+
 main()
